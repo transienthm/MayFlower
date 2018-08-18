@@ -140,7 +140,7 @@ geth attach http://ip:8546
 得到返回
 
 ```
-geth attach http://39.104.114.86:8546
+geth attach http://ip:8546
 Welcome to the Geth JavaScript console!
 
 instance: Geth/v1.8.13-stable-225171a4/linux-amd64/go1.10
