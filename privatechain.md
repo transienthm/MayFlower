@@ -2,13 +2,13 @@
 
 # 一、iterm安装（重要但不想说，因为太简单）
 
-https://juejin.im/post/5a815edd5188251c85636034
+[https://juejin.im/post/5a815edd5188251c85636034](https://juejin.im/post/5a815edd5188251c85636034)
 
 # 二、homebrew安装（重要但不想说，因为太简单）
 
-https://www.jianshu.com/p/231f923fb886
+[https://www.jianshu.com/p/231f923fb886](https://www.jianshu.com/p/231f923fb886)
 
-# 三、zsh及oh_my_zsh安装（不重要，都懒得说）
+# 三、zsh及oh\_my\_zsh安装（不重要，都懒得说）
 
 略
 
@@ -48,8 +48,6 @@ GOROOT=/usr/lib/go-1.10
 
 1. iterm提示为王童亮同学专属提示，毕竟是产品序列最会开发，开发中最会反爬，反爬中最懂产品的嘛
 2. 过程中可能涉及go语言环境搭建，请自行google
-
-
 
 # 四、私链的部署
 
@@ -95,16 +93,16 @@ vim genesis.json
 
 其中：
 
-| 字段       | 描述                                                         |
-| ---------- | ------------------------------------------------------------ |
-| alloc      | 用来预置账号以及账号的以太币数量。因为私有链挖矿比较容易，所以不需要预置有币的账号。 |
-| nonce      | 生成的工作证明的散列。注意它和 mixhash 的设置需要满足以太坊的 Yellow paper,4.3.4.Block Header Validity,（44）章节所描述的条件。 |
+| 字段 | 描述 |
+| --- | --- |
+| alloc | 用来预置账号以及账号的以太币数量。因为私有链挖矿比较容易，所以不需要预置有币的账号。 |
+| nonce | 生成的工作证明的散列。注意它和 mixhash 的设置需要满足以太坊的 Yellow paper,4.3.4.Block Header Validity,（44）章节所描述的条件。 |
 | difficulty | 设置当前区块的难度，如果难度过大，CPU 挖矿就越难，这里设置较小难度，方便 CPU 挖矿，十六进制。 |
-| mixhash    | 与 nonce 配合用于挖矿，由上一个区块的一部分生成的 hash。注意它和 nonce 的设置需要满足以太坊的 Yellow paper,4.3.4.Block Header Validity,（44）章节所描述的条件。 |
-| coinbase   | 矿工的账号，可以在创建私链之前导入已经创建好的账号。         |
+| mixhash | 与 nonce 配合用于挖矿，由上一个区块的一部分生成的 hash。注意它和 nonce 的设置需要满足以太坊的 Yellow paper,4.3.4.Block Header Validity,（44）章节所描述的条件。 |
+| coinbase | 矿工的账号，可以在创建私链之前导入已经创建好的账号。 |
 | parentHash | 上一个区块的 hash 值，创始区块没有上一个区块，所以设置为 0。 |
-| extraData  | 附加信息，可以填写任意信息，已达到私有链的个性化，可以加入自己的名字等。 |
-| gasLimit   | 该值设置对 GAS 的消耗总量限制，用来限制区块能包含的交易信息总和，私有链可以设置为最大值。 |
+| extraData | 附加信息，可以填写任意信息，已达到私有链的个性化，可以加入自己的名字等。 |
+| gasLimit | 该值设置对 GAS 的消耗总量限制，用来限制区块能包含的交易信息总和，私有链可以设置为最大值。 |
 
 ## 4.2 初始化
 
@@ -162,3 +160,6 @@ Repeat passphrase:
 ["0xefed41b6ec7692c510be8f4e87d1ec8f78df23fc"]
 >
 ```
+
+
+
