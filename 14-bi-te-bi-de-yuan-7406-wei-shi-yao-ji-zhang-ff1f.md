@@ -67,8 +67,7 @@
 
 ![image.png](https://upload-images.jianshu.io/upload_images/7220971-7ceeff3085c50099.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-解密之后就可以得到一个交易的摘要
-
+这时候几个过程就明了了，签名由私钥签名发出以后，这笔交易才能别其他的节点验证通过，所以整个账户的所有权问题，是用私钥来进行控制的
 
 
 
