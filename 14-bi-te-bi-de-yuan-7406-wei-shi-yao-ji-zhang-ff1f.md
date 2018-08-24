@@ -3,44 +3,71 @@
 比特币系统里面如何验证某个比特币是谁的，谁拥有这个比特币。我们还是先对标一下银行系统来理解这个问题。
 
 ### 银行系统
-平时我们在刷卡的时候，需要提供银行卡号和密码，如果匹配，就可以进行支付。
+
+平时我们在刷卡的时候，需要提供银行卡号和密码，如果匹配，就可以进行支付。  
 这时候如果出现盗刷怎么办呢。我们肯定是立刻报警，然后银行就会核对账户的所有者是不是我。银行核对的过程，需要借助开户时的我们提供的个人信息。
 
-![image.png](https://upload-images.jianshu.io/upload_images/7220971-5e6a315ef50c7346.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/7220971-5e6a315ef50c7346.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
 
 其实就是在开户的时候确定了账户的所有权，在确定了这个所有权之后，然后才是转账的操作。如果银行确定了某一笔001-002的支付不是本人操作的，则银行会撤销这笔记账
 
-![image.png](https://upload-images.jianshu.io/upload_images/7220971-bb052b5bb3f7ddd6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/7220971-bb052b5bb3f7ddd6.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
 
 ### 比特币系统
 
-- #### 账号 -> 地址
+* #### 账号 -&gt; 地址
 
-![image.png](https://upload-images.jianshu.io/upload_images/7220971-cbf13ac91e3984fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![image.png](https://upload-images.jianshu.io/upload_images/7220971-cbf13ac91e3984fc.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
 
 而在比特币系统里，是点对点的交易，如果在没有第三方的情况下，确定账号的所有权。
 
 实际上，账户是用一个地址来标示的，转账的过程实际上就是从一个地址转换到另外一个地址。账本上是不保存个人信息的。
 
-
-
-
 上面这样一条信息就是一个转账的记录，他记录了从"2A39CBa2390FDe"到"AAC9CBa239aFcc"的一笔转账，转移了0.2个比特币，如果谁能用这一个地址能够进行支付，那么谁就拥有了这个账户的所有权。
 
-- #### 密码 -> 私钥
-![image.png](https://upload-images.jianshu.io/upload_images/7220971-6a1758b45dd68626.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+* #### 密码 -&gt; 私钥
+
+  ![image.png](https://upload-images.jianshu.io/upload_images/7220971-6a1758b45dd68626.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
 
 刚刚说到比特币系统里面，是用地址来表示一个账号的，其实比特币里面一个地址会有一个对应的私钥，谁有了这个私钥，谁就能够使用这个地址进行支付，所以私钥一定要保管好，如果泄漏了的话，比特币就有可能丢失，而不像银行系统里面可以重置或者找回。
 
 并且比特币系统不像银行系统里面账号和密码是没有任何关系的，密码不能推导出账号，账号也不能推导出密码。比特币地址和私钥是一个非对称的关系，私钥在经过一系列的has运算之后（其中包括两次hash），就能够得到比特币的地址，但是地址不能反推出私钥。
 
-- #### 非对称加密技术（交易签名）
+* #### 非对称加密技术（交易签名）
 
 谁拥有地址的私钥，谁就能够进行支付，这样，比特币的账户所有权问题，就变成了**如何在不泄漏私钥的情况下，来证明我们拥有某个地址的私钥**。（因为如果我们把私钥亮出来给大家看，以此来告诉大家我们拥有这个私钥，那么私钥就泄漏了，其他人也可以用这个私钥进行支付）
 
 这里就用到了非对称加密技术的加密技术，对交易进行签名，这个过程分为两部分
+
 1. 对交易进行hash得到摘要
+2. 用私钥对摘要进行签名（这一步通常要求在一个安全的环境下，以免私钥被泄漏）
+
+![image.png](https://upload-images.jianshu.io/upload_images/7220971-ea78a193747241cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* #### 广播交易
+
+在得到签名以后，付款的节点就会在整个网络里进行广播，广播的内容包含交易的原始信息还有交易的签名信息。
+
+![image.png](https://upload-images.jianshu.io/upload_images/7220971-047309680d2c9f88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+如上，这个付款的节点告诉相邻的节点，他的交易信息和签名信息，请求其他节点进行验证；整个广播过程是一个循环的过程，当节点收到广播之后，验证通过之后，他会再次向已知节点继续广播。
+
+* #### 验证
+
+在节点收到广播以后，就会对交易信息和签名信息进行验证。验证签名信息是不是付款方用私钥对交易信息进行签名产生的
+
+![image.png](https://upload-images.jianshu.io/upload_images/7220971-c54fdaef5e0af701.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+> 验证的过程，是对签名和付款方地址进行一个验证运算得到一个摘要，判断这个摘要是不是交易信息的hash运算结果，如果是，则验证通过，将交易信息写入账本，继续广播，否则什么也不做
+
+* #### 签名和验证是一个运算
+
+实际上，签名和验证是一段逆运算
+- 签名是加密的过程（用付款方的私钥对摘要进行加密的过程）
+- 验证是解密的过程（用付款方的地址（公钥）和签名的信息进行解密的过程）
+
+![image.png](https://upload-images.jianshu.io/upload_images/7220971-7ceeff3085c50099.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 
 
 
