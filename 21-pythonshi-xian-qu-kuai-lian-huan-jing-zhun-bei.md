@@ -2,4 +2,5 @@
 
 - #### HTTP协议的理解
 - #### PostMan的安装 https://www.getpostman.com/
-- #### 
+- #### Python https://www.python.org/
+- #### Pycharm https://www.jetbrains.com/pycharm/
