@@ -19,6 +19,18 @@
     - 错误如何来被处理：
         - assert（内） 通常是用来检测函数内部的错误；会抛出Assert异常，会消耗掉所有的gas
         - require（外）  通常是用来检查输入的变量，或者是合约的状态变量是否满足条件，Require不会
+    ```solidity
+        function sendHalf(address addr) public payable returns(uint balance){
+        require(msg.value % 2 == 0);
+        
+        uint balanceBeforeTransfer = this.balance;
+        addr.transfer(msg.value / 2 + 1);
+         
+        assert(this.balance == balanceBeforeTransfer / 2);
+        
+        return this.balance;
+    }
+    ```
 3. ### 有关数字和加密功能
 4. ### 有关地址和合约
 
