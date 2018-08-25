@@ -18,5 +18,6 @@
 * [三.智能合约编程语言-solidity](4e09-zhi-neng-he-yue-bian-cheng-yu-8a00-solidity.md)
   * [3.1 solidity合约文件讲解](31-solidityhe-yue-wen-jian-jiang-jie.md)
   * [3.2 solidity 类型讲解](32-solidity-lei-xing-jiang-jie.md)
+  * [3.3 全局变量和函数](33-quan-ju-bian-liang-he-han-shu.md)
 * [私链部署及连接说明](privatechain.md)
 
