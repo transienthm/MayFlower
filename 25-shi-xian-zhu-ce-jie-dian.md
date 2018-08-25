@@ -21,3 +21,23 @@ class Blockchain:
     ...
 ```
 
+路由函数
+```python
+@web.route('/node/register', methods=['POST'])
+def register_node():
+    values = request.get_json()
+    nodes = values.get("nodes")
+
+    if nodes is None:
+        return "Error: please supply a valid list of nodes", 400
+
+    for node in nodes:
+        block_chain.register_node(node)
+
+    response = {
+        'message': 'New Nodes have been added',
+        'total_nodes': list(block_chain.nodes)
+    }
+
+    return jsonify(response), 201
+```
