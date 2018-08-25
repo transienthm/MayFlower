@@ -1,4 +1,5 @@
 # Summary
+
 * [简介](README.md)
 * [一.区块链技术的核心概念与原理](一.区块链技术的核心概念与原理.md)
   * [1.1 区块链的前世今生](11-qu-kuai-lian-de-guo-qu-yu-wei-lai.md)
@@ -9,6 +10,7 @@
   * [1.6 比特币的原理-共识机制](16-bi-te-bi-de-yuan-7406-gong-shi-ji-zhi.md)
 * [二.区块链的原理实现](4e8c-qu-kuai-lian-de-yuan-li-shi-xian.md)
   * [2.1 Python实现区块链环境准备](21-pythonshi-xian-qu-kuai-lian-huan-jing-zhun-bei.md)
-  * [2.2 实现区块类结构，实现交易方法](22-shi-xian-qu-kuai-lei-jie-gou-ff0c-shi-xian-jiao-yi-fang-fa.md)
+  * [2.2 实现区块链类的基本方法](22-shi-xian-qu-kuai-lei-jie-gou-ff0c-shi-xian-jiao-yi-fang-fa.md)
+  * [2.3 添加工作量证明方法](23-tian-jia-gong-zuo-liang-zheng-ming-fang-fa.md)
 * [私链部署及连接说明](privatechain.md)
 
