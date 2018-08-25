@@ -24,7 +24,12 @@ solidity 是静态语言，他的类型分为两类：值类型和引用类型
 
   * 数据位置（Data location）
 
-    引用类型比较复杂，因此在使用的时候，我们要考虑到占用空间的问题。通常他的空间要占用到256位。在拷贝的时候，开销很大。因此我们在拷贝的时候要考虑到数据存储位置的问题。一般有两种存储位置storage（永久存储在区块链中）和 memory（存储在内存中）
+    引用类型比较复杂，因此在使用的时候，我们要考虑到占用空间的问题。通常他的空间要占用到256位。在拷贝的时候，开销很大。因此我们在拷贝的时候要考虑到数据存储位置的问题。一般有两种存储位置storage（永久存储在区块链中）和 memory（存储在函数调用的临时内存空间中）
+    数据的存储和计算都是需要花费gas的，storage的开销要远大于memory。
+  * 数组类型（Arrays）
+  ![image.png](https://upload-images.jianshu.io/upload_images/7220971-20a1c9a7a1f475ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  
+
 
 
 
