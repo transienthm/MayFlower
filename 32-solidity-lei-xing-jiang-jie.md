@@ -34,7 +34,13 @@ solidity 是静态语言，他的类型分为两类：值类型和引用类型
   uint[] memory a = new uint[16];
   ```
   * 结构体（struts）
+    ```
+    Funder funder;
     
+    function newFunder() public {
+        funder = Funder({addr:msg.sender,amount:10});
+    }
+    ```
   
 
   
