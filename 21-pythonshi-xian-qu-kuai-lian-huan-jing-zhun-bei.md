@@ -7,3 +7,13 @@
 - #### Pip（安装管理python包的一个工具）
 - #### pipenv （提供Python的虚拟运行环境）
 - #### Flask & Request（python web开发）
+
+```
+pip install pipenv
+cd ~/your_workspace
+mkdir blockchain_principle
+cd blockchain_principle
+pipenv shell
+pipenv install flask==1.0
+pipenv install requests==2.18.4
+```
