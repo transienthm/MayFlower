@@ -15,7 +15,7 @@
   * [2.4 添加节点通信功能](24-tian-jia-jie-dian-tong-xin-gong-neng.md)
   * [2.5 实现注册节点](25-shi-xian-zhu-ce-jie-dian.md)
   * [2.6 共识机制](26-gong-shi-ji-zhi.md)
-* 三.智能合约编程语言-solidity
+* [三.智能合约编程语言-solidity](4e09-zhi-neng-he-yue-bian-cheng-yu-8a00-solidity.md)
   * [3.1 solidity合约文件讲解](31-solidityhe-yue-wen-jian-jiang-jie.md)
   * [3.2 solidity 类型讲解](32-solidity-lei-xing-jiang-jie.md)
 * [私链部署及连接说明](privatechain.md)
