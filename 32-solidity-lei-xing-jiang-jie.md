@@ -20,3 +20,4 @@ solidity 是静态语言，他的类型分为两类：值类型和引用类型
     - 验证一个合法定制的方法：https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md
     
     
+- ### 引用类型
