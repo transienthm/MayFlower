@@ -68,3 +68,5 @@ def consensus():
 
     return jsonify(response)
 ```
+
+至此，我们的简易区块链就完成了
