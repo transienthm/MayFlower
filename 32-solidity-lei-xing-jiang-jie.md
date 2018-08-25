@@ -9,5 +9,6 @@ solidity 是静态语言，他的类型分为两类：值类型和引用类型
 
     - 其中整型包括uint8，uint32，uint64，uint256，uint 五种类型，代表不同的位数，uint和uint256 都是256位
     - 在c和c++里面，字符串常量通常最后都会有个\0结尾符，在solidity中没有
+    - 十六进制常量以hex开头，如```hex"abcd"```
     
     
