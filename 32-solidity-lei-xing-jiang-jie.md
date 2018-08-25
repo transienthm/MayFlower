@@ -33,6 +33,7 @@ solidity 是静态语言，他的类型分为两类：值类型和引用类型
   // 声明一个定长的memory类型的数组
   uint[] memory a = new uint[16];
   ```
+  
 
   
 
