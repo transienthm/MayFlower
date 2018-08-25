@@ -17,3 +17,24 @@ pipenv shell
 pipenv install flask==1.0
 pipenv install requests==2.18.4
 ```
+
+创建blockchain.py文件，编写区块结构
+
+```python
+"""
+{
+    "index": 0, 索引
+    "timestamp": "", 时间戳
+    "transactions": [
+        {
+            "sender": "",
+            "recipient": "",
+            "amount": 5
+        }
+    ],
+    "proof": "", # 工作量证明
+    "previous_hash": "" # 上一个区块的hash
+}
+"""
+
+```
