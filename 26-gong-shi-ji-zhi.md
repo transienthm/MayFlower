@@ -11,7 +11,7 @@
         new_chain = None
 
         for node in neighbours:
-            # 遍历节点信息
+            # 遍历邻居节点，获取他们的链信息
             response = requests.get(f'http://{node}/chain')
             if response.status_code == 200:
                 length = response.json()['length']
