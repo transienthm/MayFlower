@@ -5,7 +5,7 @@
 * #### 使用Flask启动web服务器
 
 项目结构如下
-```
+```python
 ├── Pipfile
 ├── Pipfile.lock
 ├── __pycache__
