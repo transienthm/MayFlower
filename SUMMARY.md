@@ -13,5 +13,6 @@
   * [2.2 实现区块链类的基本方法](22-shi-xian-qu-kuai-lei-jie-gou-ff0c-shi-xian-jiao-yi-fang-fa.md)
   * [2.3 添加工作量证明方法](23-tian-jia-gong-zuo-liang-zheng-ming-fang-fa.md)
   * [2.4 添加节点通信功能](24-tian-jia-jie-dian-tong-xin-gong-neng.md)
+  * [2.5 实现注册节点](25-shi-xian-zhu-ce-jie-dian.md)
 * [私链部署及连接说明](privatechain.md)
 
