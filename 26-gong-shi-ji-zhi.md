@@ -26,4 +26,29 @@
 
         self.chain = new_chain
         return True
+        
+    def _valid_chain(self, chain):
+        last_block = chain[0]
+        current_index = 1
+        
+        以此遍历链上的每一个节点
+        while current_index < len(chain):
+            block = chain[current_index]
+            # 如果某个节点保存的上一个节点的hash值不正确，则校验不通过
+            if block['previous_hash'] != self.hash(last_block):
+                return False
+
+            # 如果某个节点不能通过工作量证明，则校验不通过
+            if not self._valid_proof(last_block['proof'], block['proof']):
+                return False
+
+            last_block = block
+            current_index += 1
+
+        return True
+```
+
+```python
+
+
 ```
