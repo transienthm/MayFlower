@@ -16,5 +16,6 @@ solidity 是静态语言，他的类型分为两类：值类型和引用类型
         return [a,a[0],a[1]]
     }
     ```
+    - 地址类型 address 表示一个账户地址（20字节）如```Ox72ba7d8e73fe8eb666ea66ba bc8116a41 bfb1Oe2``` ，他最重要的两个成员是属性banlance标示一个账户的余额和transfer() 方法用于转账操作
     
     
