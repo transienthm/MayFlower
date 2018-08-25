@@ -90,3 +90,15 @@ def mine():
 
     return jsonify(response), 201
 ```
+
+* #### 实现获取区块链信息的接口
+```python
+@web.route('/chain', methods=['GET'])
+def full_chain():
+    response = {
+        'chain': block_chain.chain,
+        'length': len(block_chain.chain)
+    }
+
+    return jsonify(response), 200
+```
