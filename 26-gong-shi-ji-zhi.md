@@ -69,4 +69,4 @@ def consensus():
     return jsonify(response)
 ```
 
-至此，我们的简易区块链就完成了
+至此，我们的简易区块链就完成了，源代码地址：https://github.com/MarkGao11520/blockchain_demo。
