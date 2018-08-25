@@ -49,8 +49,22 @@
         return True
 ```
 
-视图函数
+- 视图函数
 ```python
+@web.route('/node/resolve', methods=['GET'])
+def consensus():
+    replaced = block_chain.resolve_conflicts()
 
+    if replaced:
+        response = {
+            'message': 'Our chain was replaced',
+            'new_chain': block_chain.chain
+        }
+    else:
+        response = {
+            'message': 'Our chain is authoritative',
+            'chain': block_chain.chain
+        }
 
+    return jsonify(response)
 ```
