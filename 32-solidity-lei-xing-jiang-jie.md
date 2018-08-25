@@ -29,7 +29,7 @@ solidity 是静态语言，他的类型分为两类：值类型和引用类型
   * 数组类型（Arrays）
   ![image.png](https://upload-images.jianshu.io/upload_images/7220971-20a1c9a7a1f475ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     - 数组一般有两个成员： 属性length和push() 像数组中添加新元素
-    - 数组的长度一经创建则不可修改
+
   
 
 
