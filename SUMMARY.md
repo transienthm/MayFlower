@@ -8,7 +8,7 @@
   * [1.5 比特币的原理-为什么记账-挖矿](15-bi-te-bi-de-yuan-7406-wei-shi-yao-ji-8d26-wa-kuang.md)
   * [1.6 比特币的原理-共识机制](16-bi-te-bi-de-yuan-7406-gong-shi-ji-zhi.md)
 * 二.区块链的原理实现
-  * 2.1 Python实现区块链环境准备
+  * [2.1 Python实现区块链环境准备](21-pythonshi-xian-qu-kuai-lian-huan-jing-zhun-bei.md)
 * [私链部署及连接说明](privatechain.md)
 * [test](test.md)
 
