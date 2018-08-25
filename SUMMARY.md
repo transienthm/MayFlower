@@ -1,7 +1,7 @@
 # Summary
 
 * [私链部署及连接说明](一.区块链技术的核心概念与原理.md)
-* [一.区块链技术的核心概念与原理](README.md)
+* [一.区块链技术的核心概念与原理](一.区块链技术的核心概念与原理.md)
   * [1.1 区块链的前世今生](11-qu-kuai-lian-de-guo-qu-yu-wei-lai.md)
   * [1.2 比特币是什么](12-bi-te-bi-shi-shi-yao.md)
   * [1.3 比特币的原理-账本如何验证](13-bi-te-bi-de-yuan-li.md)
@@ -11,5 +11,3 @@
 * [二.区块链的原理实现](4e8c-qu-kuai-lian-de-yuan-li-shi-xian.md)
   * [2.1 Python实现区块链环境准备](21-pythonshi-xian-qu-kuai-lian-huan-jing-zhun-bei.md)
   * [2.2 实现区块类结构，实现交易方法](22-shi-xian-qu-kuai-lei-jie-gou-ff0c-shi-xian-jiao-yi-fang-fa.md)
-* [test](test.md)
-
