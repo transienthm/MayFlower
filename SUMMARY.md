@@ -17,5 +17,6 @@
   * [2.6 共识机制](26-gong-shi-ji-zhi.md)
 * 三.智能合约编程语言-solidity
   * [3.1 solidity合约文件讲解](31-solidityhe-yue-wen-jian-jiang-jie.md)
+  * 3.2 solidity 类型讲解
 * [私链部署及连接说明](privatechain.md)
 
