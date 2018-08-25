@@ -3,7 +3,6 @@
 共识机制的原理是，当一个节点通过工作量证明打包了区块添加到了区块链上，要和全网其他同时完成工作量证明的节点竞争最长链，如果发现比自己长的链，则替换掉自己的，基于这个，来完成我们的代码编写
 
 - BlockChain
-
 ```python  
     def resolve_conflicts(self):
         neighbours = self.nodes
