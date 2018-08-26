@@ -4,7 +4,18 @@
 这个很简单了，就是函数的参数列表穿的参数
 * #### 输出参数
 在函数定义的returns部分可以声明输出参数，然后在函数体对其进行赋值，这时候不需要return
+```
+    function testSimpleOutPut(uint a,uint b) public constant returns(uint sum,uint mul){
+        sum = a + b;
+        mul = a * b;
+    }
+```
 * #### 命名参数
 在调用函数的时候可以不按照顺序，而是使用{}将参数名和要传的值以key:value方式用,进行拼接。
+```
+    function testNameParameter() public constant{
+        testSimpleOutPutParameter({b:1,a:2});
+    }
+```
 * #### 解构参数
 当函数有多个返回值的时候，调用函数的时候需要结构来获取多个返回值
