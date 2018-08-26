@@ -20,5 +20,6 @@
   * [3.2 solidity 类型讲解](32-solidity-lei-xing-jiang-jie.md)
   * [3.3 全局变量和函数](33-quan-ju-bian-liang-he-han-shu.md)
   * [3.4 solidity 参数和控制结构](34-can-shu.md)
+  * [3.5 solidity 可见性和函数](35-solidity-ke-jian-xing-he-han-shu.md)
 * [私链部署及连接说明](privatechain.md)
 
