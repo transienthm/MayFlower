@@ -19,6 +19,16 @@
 - ### 函数
     * #### 构造函数
     > 在合约创建的时候运行的函数，可以在里面做一些初始化的操作
+    ```
+    contract Test{
+       uint internal data;
+   
+       constructor(uint a) public {
+           data = a;
+       }
+   
+}
+    ```
     * #### 视图函数（constant/view）
     > 表示不会修改状态变量，constant和view是等价的，在新版中推荐优先使用view
     * #### 纯函数（pure）
