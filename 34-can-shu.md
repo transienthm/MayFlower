@@ -1,4 +1,4 @@
-# solidity 参数
+# 3.4 solidity 参数和控制结构
 
 * #### 输入参数
 这个很简单了，就是函数的参数列表穿的参数
@@ -30,3 +30,6 @@
         (y,_,z) = f();
     }
 ```
+
+* #### 控制结构
+solidity 的控制结构有 ```if, else, while, do, for, break, continue, return, ? :``` 没有 ```switch,goto```
