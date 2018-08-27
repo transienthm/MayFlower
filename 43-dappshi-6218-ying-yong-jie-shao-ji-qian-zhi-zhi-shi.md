@@ -6,12 +6,20 @@
 
 1. ### 应用背景：
 
-   Pete有一个宠物店,有16只宠物,他想开发一-个去中心化应用,让大家来领养宠物。
-   ![image.png](https://upload-images.jianshu.io/upload_images/7220971-7828582cca0d4887.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   Pete有一个宠物店,有16只宠物,他想开发一-个去中心化应用,让大家来领养宠物。  
+   ![image.png](https://upload-images.jianshu.io/upload_images/7220971-7828582cca0d4887.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
 
-2. 
-3. 
-4. 
+2. ### 知识点
+
+   1. HTML、JavaScript、CSS
+
+   2. Web服务器
+
+   3. 智能合约
+
+   4. Web.js
+3. ### 
+
 
 
 
