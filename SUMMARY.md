@@ -24,5 +24,6 @@
 * [四. 区块链去中心化应用DAPP开发](56db-qu-kuai-lian-qu-zhong-xin-hua-ying-yong-dapp-kai-fa.md)
   * [4.1 合约实战-简单代币开发](41-he-yue-shi-6218-jian-dan-dai-bi-kai-fa.md)
   * [4.2 合约实战-实现标准代币接口](42-he-yue-shi-6218-shi-xian-biao-zhun-dai-bi-jie-kou.md)
+  * [4.3 DAPP实战- 应用介绍及前置知识](43-dappshi-6218-ying-yong-jie-shao-ji-qian-zhi-zhi-shi.md)
 * [私链部署及连接说明](privatechain.md)
 
