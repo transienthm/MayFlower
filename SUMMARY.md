@@ -23,5 +23,6 @@
   * [3.5 solidity 可见性和函数](35-solidity-ke-jian-xing-he-han-shu.md)
 * [四. 区块链去中心化应用DAPP开发](56db-qu-kuai-lian-qu-zhong-xin-hua-ying-yong-dapp-kai-fa.md)
   * [4.1 合约实战-简单代币开发](41-he-yue-shi-6218-jian-dan-dai-bi-kai-fa.md)
+  * [4.2 合约实战-实现标准代币接口](42-he-yue-shi-6218-shi-xian-biao-zhun-dai-bi-jie-kou.md)
 * [私链部署及连接说明](privatechain.md)
 
