@@ -57,7 +57,7 @@ Commands:
   Test contracts: truffle test
   Run dev server: npm run dev
 (blockchain_principle-x-Y8P0ch) ~/project/solidity/pet-shop_2 ᐅ ls
-box-img-lg.png    box-img-sm.png    bs-config.json    contracts         migrations        node_modules      package-lock.json package.json      src               test              truffle.js
+box-img-lg.png    box-img-sm.png    bs-config.json    contracts         migrations        node_modules      package-lock.json package.json      src （前端源文件）              test              truffle.js
 ```
 
 - ### ganache https://truffleframework.com/ganache
