@@ -7,7 +7,7 @@ npm install truffle -g
 ```
 
 使用truffle初始化一个工程，可以看到工程下有如下文件
-```
+```shell
 (blockchain_principle-x-Y8P0ch) ~/project/solidity/pet-shop ᐅ truffle init
 Downloading...
 Unpacking...
