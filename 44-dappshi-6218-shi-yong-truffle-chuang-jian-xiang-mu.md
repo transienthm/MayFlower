@@ -28,8 +28,8 @@ contracts         migrations        test              truffle-config.js truffle.
 │   └── Migrations.sol -- 合约文件
 ├── migrations
 │   └── 1_initial_migration.js --部署脚本
-├── test
-├── truffle-config.js
+├── test --测试文件存放目录
+├── truffle-config.js --配置文件
 └── truffle.js
 
 3 directories, 4 files
@@ -61,4 +61,4 @@ box-img-lg.png    box-img-sm.png    bs-config.json    contracts         migratio
 ```
 
 - ### ganache https://truffleframework.com/ganache
-ganache 可以是运行在我们本地的一个虚拟的节点（只有一个节点的区块链），trauffle利用这个节点来测试项目
+ganache 可以是运行在我们本地内存环境的一个虚拟的节点（只有一个节点的区块链），然后会为我们创建账号，trauffle利用这个节点来提供环境测试项目
