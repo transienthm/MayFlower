@@ -6,7 +6,8 @@
 npm install truffle -g
 ```
 
-使用truffle初始化一个工程，可以看到工程下有如下文件
+  使用truffle初始化一个工程，可以看到工程下有如下文件
+  
 ```shell
 (blockchain_principle-x-Y8P0ch) ~/project/solidity/pet-shop ᐅ truffle init
 Downloading...
@@ -24,9 +25,9 @@ contracts         migrations        test              truffle-config.js truffle.
 (blockchain_principle-x-Y8P0ch) ~/project/solidity/pet-shop ᐅ tree
 .
 ├── contracts
-│   └── Migrations.sol
+│   └── Migrations.sol -- 合约文件
 ├── migrations
-│   └── 1_initial_migration.js
+│   └── 1_initial_migration.js --部署脚本
 ├── test
 ├── truffle-config.js
 └── truffle.js
@@ -34,4 +35,27 @@ contracts         migrations        test              truffle-config.js truffle.
 3 directories, 4 files
 (blockchain_principle-x-Y8P0ch) ~/project/solidity/pet-shop ᐅ
 
+```
+
+- ### truffle unbox 
+  - box 是 truffle提供的一系列的包（库），例如react等，
+  - truffle提供了一些官方的boxs，如pet-shop
+  - [unbox](https://truffleframework.com/boxes/pet-shop)命令可以帮我们把官方提供好的box下载好并解压
+  
+```
+(blockchain_principle-x-Y8P0ch) ~/project/solidity/pet-shop_2 ᐅ ls
+(blockchain_principle-x-Y8P0ch) ~/project/solidity/pet-shop_2 ᐅ truffle unbox pet-shop
+Downloading...
+Unpacking...
+Setting up...
+Unbox successful. Sweet!
+
+Commands:
+
+  Compile:        truffle compile
+  Migrate:        truffle migrate
+  Test contracts: truffle test
+  Run dev server: npm run dev
+(blockchain_principle-x-Y8P0ch) ~/project/solidity/pet-shop_2 ᐅ ls
+box-img-lg.png    box-img-sm.png    bs-config.json    contracts         migrations        node_modules      package-lock.json package.json      src               test              truffle.js
 ```
