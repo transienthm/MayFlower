@@ -37,3 +37,8 @@ Writing artifacts to ./build/contracts
 Adoption.json   Migrations.json
 ~/project/solidity/pet-shop/build/contracts ᐅ
 ```
+
+编译完成的文件是一个j son文件在build/contracts目录下，里面保存了ABI(Application Binary Inteface) 信息和字节码信息，以及其他的一些信息，这些在合约的部署和调用时候会用到
+![image.png](https://upload-images.jianshu.io/upload_images/7220971-336a27837a7b1f96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](https://upload-images.jianshu.io/upload_images/7220971-68e5708d0aa21430.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
