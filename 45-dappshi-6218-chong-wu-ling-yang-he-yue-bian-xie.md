@@ -23,3 +23,5 @@ contract Adoption{
 ```
 
 - ### 编译
+
+代码编写完成，就可以进行编译了，编译的过程也很简单,只需要在pet-shop (项目根目录下)执行```truffle compile``` 即可
