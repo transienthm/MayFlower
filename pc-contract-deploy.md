@@ -22,6 +22,8 @@ rpc url的格式为http://ip:port
 geth --datadir data --networkid "201808" --rpc --rpcaddr "0.0.0.0" --rpcport 8546 --rpccorsdomain "*" --rpcapi="db,eth,net,web3,personal,miner"
 ```
 
+此时需要输入rpc url，可能会有个大坑，如果remix是https连接，将无法成功连接rpc，因此需要将remix改为http连接
+
 # 四、创建账户
 
 1. 远程连接私链
