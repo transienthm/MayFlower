@@ -27,5 +27,6 @@
   * [4.3 DAPP实战- 应用介绍及前置知识](43-dappshi-6218-ying-yong-jie-shao-ji-qian-zhi-zhi-shi.md)
   * [4.4 DAPP实战- 使用truffle创建项目](44-dappshi-6218-shi-yong-truffle-chuang-jian-xiang-mu.md)
   * [4.5 DAPP实战-  宠物领养合约编写](45-dappshi-6218-chong-wu-ling-yang-he-yue-bian-xie.md)
+  * [4.6 DAPP实战 - 合约部署和测试](46-dappshi-zhan-he-yue-bu-shu-he-ce-shi.md)
 * [私链部署及连接说明](privatechain.md)
 
