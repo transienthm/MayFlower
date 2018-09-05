@@ -46,21 +46,37 @@ module.exports = function(deployer) {
 
 
 3.执行truffle migrate 部署
-```
-truffle migrat
+```shell
+~/project/solidity/pet-shop ᐅ truffle migrate
+Using network 'development'.
+
+Running migration: 1_initial_migration.js
+  Deploying Migrations...
+  ... 0x94b385261ca5cefda0202e43726dcfa46aabbbf85de6e331096a478fae710a85
+  Migrations: 0x1a3b3022ccf9ae81624d958b2eef408ccb357dd3
+Saving successful migration to network...
+  ... 0x930cc19a0fb6df4e64c81453f9bbdd72df9849acda4bc013d852f97ac9b9a176
+Saving artifacts...
+Running migration: 2_deploy_contracts.js
+  Deploying Adoption...
+  ... 0x60d97737d8db67c008e6a59fd7570b23036bd3e6a5489a433b550c0df0dade50
+  Adoption: 0xa776e0cd0a3d6c709de0dd84d1eea9a9ac3a4707
+Saving successful migration to network...
+  ... 0x3221faf90b22be14c656c81a774be1b0c145710d7923113dc1dd544b37590fd7
+Saving artifacts...
 ```
 部署成功后观察 build/contracts/ 目录下的合约json文件的里的networks下多了相关信息
 
 
 - ### 测试
 
-在test文件夹下编写测试的合约TestAdoption.sol
+1.在test文件夹下编写测试的合约TestAdoption.sol
 
-```
+```solidity
 pragma solidity ^0.4.17;
 
-import 'truffle/Assert.sol';
-import 'truffle/DeployedAddresses.sol';
+import 'truffle/Assert.sol'; // 引入断言
+import 'truffle/DeployedAddresses.sol'; // 通过这个可以获取到部署合约的地址
 import '../contracts/Adoption.sol';
 
 contract TestAdoption {
@@ -91,3 +107,25 @@ contract TestAdoption {
 
 
 ```
+
+2.执行测试,执行的过程中会花费gas
+
+```shell
+~/project/solidity/pet-shop ᐅ truffle test
+Using network 'development'.
+
+Compiling ./contracts/Adoption.sol...
+Compiling ./test/TestAdoption.sol...
+Compiling truffle/Assert.sol...
+Compiling truffle/DeployedAddresses.sol...
+
+
+  TestAdoption
+    ✓ testUserCanAdoptPet (82ms)
+    ✓ testGetAdopterAddressByPetid (139ms)
+    ✓ testGetAdopterAddressByPetIdInArray (120ms)
+
+
+  3 passing (1s)
+```
+
