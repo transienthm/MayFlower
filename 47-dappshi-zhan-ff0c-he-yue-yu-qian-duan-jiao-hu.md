@@ -31,11 +31,13 @@
     });
 ```
 
-TruffleContract支持函数式编程。具体使用如下
+TruffleContract支持函数式编程，每一个then方法的return会作为下一个then的输入，具体使用如下
 
 ```JavaScript
+    // 首先调用deployed方法，获取合约实例
     App.contracts.Adoption.deployed().then(function(instance) {
       apotionInstance = instance;
+       // 然后就可以通过合约实例方案合约方法和属性了（getAdopters就是合约方法，具体参照4.4节）
       return apotionInstance.getAdopters.call();
     }).then(function(adopters) {
       
