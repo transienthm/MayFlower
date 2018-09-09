@@ -31,4 +31,4 @@
   * [4.7 DAPP实战，合约与前端交互](47-dappshi-zhan-ff0c-he-yue-yu-qian-duan-jiao-hu.md)
 * [私链搭建及远程说明](privatechain.md)
   - [私链合约部署](pc-contract-deploy.md)
-
+* [区块链技术入门](第一章——区块链技术入门.md)
