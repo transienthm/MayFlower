@@ -1,4 +1,4 @@
-#第一章：solidity 入门
+#一：solidity 入门
 
 ## 一、智能合约
 
