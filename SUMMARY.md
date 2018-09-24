@@ -37,4 +37,5 @@
 * [僵尸游戏系列以太坊课程](僵尸课程简介.md)
   * [一：Solidity入门](一：solidity入门.md)
   * [二：Solidty进阶](二：进阶.md)
+  * [三：高级Solidity理论]（三：高级Solidity理论.md）
   
