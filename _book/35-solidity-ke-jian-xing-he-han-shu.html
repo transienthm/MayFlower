@@ -1,0 +1,772 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.5 solidity 可见性和函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="56db-qu-kuai-lian-qu-zhong-xin-hua-ying-yong-dapp-kai-fa.html" />
+    
+    
+    <link rel="prev" href="34-can-shu.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="慕课网区块链入门实战笔记/read.md">
+            
+                <span>
+            
+                    
+                    慕课网区块链入门实战笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="一.区块链技术的核心概念与原理.html">
+            
+                <a href="一.区块链技术的核心概念与原理.html">
+            
+                    
+                    一.区块链技术的核心概念与原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="11-qu-kuai-lian-de-guo-qu-yu-wei-lai.html">
+            
+                <a href="11-qu-kuai-lian-de-guo-qu-yu-wei-lai.html">
+            
+                    
+                    1.1 区块链的前世今生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="12-bi-te-bi-shi-shi-yao.html">
+            
+                <a href="12-bi-te-bi-shi-shi-yao.html">
+            
+                    
+                    1.2 比特币是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="13-bi-te-bi-de-yuan-li.html">
+            
+                <a href="13-bi-te-bi-de-yuan-li.html">
+            
+                    
+                    1.3 比特币的原理-账本如何验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="14-bi-te-bi-de-yuan-7406-wei-shi-yao-ji-zhang-ff1f.html">
+            
+                <a href="14-bi-te-bi-de-yuan-7406-wei-shi-yao-ji-zhang-ff1f.html">
+            
+                    
+                    1.4 比特币的原理-账户所有权问题？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="15-bi-te-bi-de-yuan-7406-wei-shi-yao-ji-8d26-wa-kuang.html">
+            
+                <a href="15-bi-te-bi-de-yuan-7406-wei-shi-yao-ji-8d26-wa-kuang.html">
+            
+                    
+                    1.5 比特币的原理-为什么记账-挖矿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="16-bi-te-bi-de-yuan-7406-gong-shi-ji-zhi.html">
+            
+                <a href="16-bi-te-bi-de-yuan-7406-gong-shi-ji-zhi.html">
+            
+                    
+                    1.6 比特币的原理-共识机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="4e8c-qu-kuai-lian-de-yuan-li-shi-xian.html">
+            
+                <a href="4e8c-qu-kuai-lian-de-yuan-li-shi-xian.html">
+            
+                    
+                    二.区块链的原理实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="21-pythonshi-xian-qu-kuai-lian-huan-jing-zhun-bei.html">
+            
+                <a href="21-pythonshi-xian-qu-kuai-lian-huan-jing-zhun-bei.html">
+            
+                    
+                    2.1 Python实现区块链环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="22-shi-xian-qu-kuai-lei-jie-gou-ff0c-shi-xian-jiao-yi-fang-fa.html">
+            
+                <a href="22-shi-xian-qu-kuai-lei-jie-gou-ff0c-shi-xian-jiao-yi-fang-fa.html">
+            
+                    
+                    2.2 实现区块链类的基本方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="23-tian-jia-gong-zuo-liang-zheng-ming-fang-fa.html">
+            
+                <a href="23-tian-jia-gong-zuo-liang-zheng-ming-fang-fa.html">
+            
+                    
+                    2.3 添加工作量证明方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="24-tian-jia-jie-dian-tong-xin-gong-neng.html">
+            
+                <a href="24-tian-jia-jie-dian-tong-xin-gong-neng.html">
+            
+                    
+                    2.4 添加节点通信功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="25-shi-xian-zhu-ce-jie-dian.html">
+            
+                <a href="25-shi-xian-zhu-ce-jie-dian.html">
+            
+                    
+                    2.5 实现注册节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="26-gong-shi-ji-zhi.html">
+            
+                <a href="26-gong-shi-ji-zhi.html">
+            
+                    
+                    2.6 共识机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="4e09-zhi-neng-he-yue-bian-cheng-yu-8a00-solidity.html">
+            
+                <a href="4e09-zhi-neng-he-yue-bian-cheng-yu-8a00-solidity.html">
+            
+                    
+                    三.智能合约编程语言-solidity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="31-solidityhe-yue-wen-jian-jiang-jie.html">
+            
+                <a href="31-solidityhe-yue-wen-jian-jiang-jie.html">
+            
+                    
+                    3.1 solidity合约文件讲解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="32-solidity-lei-xing-jiang-jie.html">
+            
+                <a href="32-solidity-lei-xing-jiang-jie.html">
+            
+                    
+                    3.2 solidity 类型讲解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="33-quan-ju-bian-liang-he-han-shu.html">
+            
+                <a href="33-quan-ju-bian-liang-he-han-shu.html">
+            
+                    
+                    3.3 全局变量和函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="34-can-shu.html">
+            
+                <a href="34-can-shu.html">
+            
+                    
+                    3.4 solidity 参数和控制结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.5" data-path="35-solidity-ke-jian-xing-he-han-shu.html">
+            
+                <a href="35-solidity-ke-jian-xing-he-han-shu.html">
+            
+                    
+                    3.5 solidity 可见性和函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="56db-qu-kuai-lian-qu-zhong-xin-hua-ying-yong-dapp-kai-fa.html">
+            
+                <a href="56db-qu-kuai-lian-qu-zhong-xin-hua-ying-yong-dapp-kai-fa.html">
+            
+                    
+                    四. 区块链去中心化应用DAPP开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="41-he-yue-shi-6218-jian-dan-dai-bi-kai-fa.html">
+            
+                <a href="41-he-yue-shi-6218-jian-dan-dai-bi-kai-fa.html">
+            
+                    
+                    4.1 合约实战-简单代币开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="42-he-yue-shi-6218-shi-xian-biao-zhun-dai-bi-jie-kou.html">
+            
+                <a href="42-he-yue-shi-6218-shi-xian-biao-zhun-dai-bi-jie-kou.html">
+            
+                    
+                    4.2 合约实战-实现标准代币接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="43-dappshi-6218-ying-yong-jie-shao-ji-qian-zhi-zhi-shi.html">
+            
+                <a href="43-dappshi-6218-ying-yong-jie-shao-ji-qian-zhi-zhi-shi.html">
+            
+                    
+                    4.3 DAPP实战- 应用介绍及前置知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="44-dappshi-6218-shi-yong-truffle-chuang-jian-xiang-mu.html">
+            
+                <a href="44-dappshi-6218-shi-yong-truffle-chuang-jian-xiang-mu.html">
+            
+                    
+                    4.4 DAPP实战- 使用truffle创建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="45-dappshi-6218-chong-wu-ling-yang-he-yue-bian-xie.html">
+            
+                <a href="45-dappshi-6218-chong-wu-ling-yang-he-yue-bian-xie.html">
+            
+                    
+                    4.5 DAPP实战-  宠物领养合约编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="46-dappshi-zhan-he-yue-bu-shu-he-ce-shi.html">
+            
+                <a href="46-dappshi-zhan-he-yue-bu-shu-he-ce-shi.html">
+            
+                    
+                    4.6 DAPP实战 - 合约部署和测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="47-dappshi-zhan-ff0c-he-yue-yu-qian-duan-jiao-hu.html">
+            
+                <a href="47-dappshi-zhan-ff0c-he-yue-yu-qian-duan-jiao-hu.html">
+            
+                    
+                    4.7 DAPP实战，合约与前端交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="privatechain.html">
+            
+                <a href="privatechain.html">
+            
+                    
+                    私链搭建及远程说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="pc-contract-deploy.html">
+            
+                <a href="pc-contract-deploy.html">
+            
+                    
+                    私链合约部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="一.区块链技术入门.md">
+            
+                <span>
+            
+                    
+                    区块链系列课程第一章：区块链技术入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="账户、交易、消息.html">
+            
+                <a href="账户、交易、消息.html">
+            
+                    
+                    以太坊中的账户、消息、交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3.5 solidity 可见性和函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="35-solidity-&#x53EF;&#x89C1;&#x6027;&#x548C;&#x51FD;&#x6570;">3.5 solidity &#x53EF;&#x89C1;&#x6027;&#x548C;&#x51FD;&#x6570;</h1>
+<ul>
+<li><h3 id="&#x53EF;&#x89C1;&#x6027;">&#x53EF;&#x89C1;&#x6027;</h3>
+<ul>
+<li><h4 id="public">public</h4>
+<blockquote>
+<p>&#x516C;&#x5F00;&#x51FD;&#x6570;&#x662F;&#x5408;&#x7EA6;&#x63A5;&#x53E3;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5185;&#x90E8;&#xFF0C;&#x6216;&#x8005;&#x6D88;&#x606F;&#x6765;&#x8FDB;&#x884C;&#x8C03;&#x7528;
+&#x5BF9;&#x4E8E;public&#x7C7B;&#x578B;&#x7684;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8BBF;&#x95EE;&#x5668;&#x3002;
+&#x51FD;&#x6570;&#x9ED8;&#x8BA4;&#x53EF;&#x89C1;&#x6027;&#x662F;public</p>
+</blockquote>
+</li>
+<li><h4 id="private">private</h4>
+<blockquote>
+<p>&#x79C1;&#x6709;&#x51FD;&#x6570;&#x548C;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#x4EC5;&#x5728;&#x5F53;&#x524D;&#x5408;&#x7EA6;&#x4E2D;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#xFF0C;&#x5728;&#x7EE7;&#x627F;&#x7684;&#x5408;&#x7EA6;&#x5185;&#xFF0C;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;&#x3002;</p>
+</blockquote>
+</li>
+<li><h4 id="external">external</h4>
+<blockquote>
+<p>&#x5916;&#x90E8;&#x51FD;&#x6570;&#x662F;&#x5408;&#x7EA6;&#x63A5;&#x53E3;&#x7684;&#x4E00;- &#x90E8;&#x5206;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x6D88;&#x606F;&#x8C03;&#x7528;<code>(this.xxx())</code>(&#x8FD9;&#x5C31;&#x50CF;&#x662F;java&#x4E2D;&#x7684;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#xFF0C;&#x53EA;&#x80FD;&#x7531;&#x5BF9;&#x8C61;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5728;solidity&#x91CC;&#x6CA1;&#x6709;&#x5BF9;&#x8C61;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x53EA;&#x6709;&#x6D88;&#x606F;&#x7684;&#x6982;&#x5FF5;)</p>
+</blockquote>
+</li>
+<li><h4 id="internal">internal</h4>
+<blockquote>
+<p>&#x51FD;&#x6570;&#x548C;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x5185;&#x90E8;&#x8BBF;&#x95EE;&#x3002;&#x5982;&#x5728;&#x5F53;&#x524D;&#x5408;&#x7EA6;&#x4E2D;&#x8C03;&#x7528;&#xFF0C;&#x6216;&#x7EE7;&#x627F;&#x7684;&#x5408;&#x7EA6;&#x91CC;&#x8C03;&#x7528;(&#x7C7B;&#x4F3C;&#x4E8E;java&#x4E2D;&#x7684;protect)&#x3002;<strong>&#x72B6;&#x6001;&#x53D8;&#x91CF;&#x9ED8;&#x8BA4;&#x7684;&#x53EF;&#x89C1;&#x6027;&#x662F;internal&#xFF08;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#x5C31;&#x7C7B;&#x4F3C;&#x4E8E;java&#x4E2D;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#xFF08;&#x5408;&#x7EA6;&#xFF09;&#xFF09;</strong></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h3 id="&#x51FD;&#x6570;">&#x51FD;&#x6570;</h3>
+<ul>
+<li><h4 id="&#x6784;&#x9020;&#x51FD;&#x6570;">&#x6784;&#x9020;&#x51FD;&#x6570;</h4>
+<blockquote>
+<p>&#x5728;&#x5408;&#x7EA6;&#x521B;&#x5EFA;&#x7684;&#x65F6;&#x5019;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x91CC;&#x9762;&#x505A;&#x4E00;&#x4E9B;&#x521D;&#x59CB;&#x5316;&#x7684;&#x64CD;&#x4F5C;</p>
+</blockquote>
+<pre><code>contract Test{
+ uint internal data;
+
+ constructor(uint a) public {
+     data = a;
+ }
+
+}
+</code></pre></li>
+<li><h4 id="&#x89C6;&#x56FE;&#x51FD;&#x6570;&#xFF08;constantview&#xFF09;">&#x89C6;&#x56FE;&#x51FD;&#x6570;&#xFF08;constant/view&#xFF09;</h4>
+<blockquote>
+<p>&#x8868;&#x793A;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x72B6;&#x6001;&#xFF0C;constant&#x548C;view&#x662F;&#x7B49;&#x4EF7;&#x7684;&#xFF0C;&#x5728;&#x65B0;&#x7248;&#x4E2D;&#x63A8;&#x8350;&#x4F18;&#x5148;&#x4F7F;&#x7528;view&#x3002;
+&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x4F1A;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x4FEE;&#x6539;&#x4E86;&#x72B6;&#x6001;&#xFF1A;</p>
+<ul>
+<li>&#x89E6;&#x53D1;&#x4E86;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;</li>
+<li>&#x4FEE;&#x6539;&#x72B6;&#x6001;&#x53D8;&#x91CF;</li>
+<li>&#x5728;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x521B;&#x5EFA;&#x4E86;&#x5176;&#x4ED6;&#x7684;&#x5408;&#x7EA6;</li>
+</ul>
+</blockquote>
+</li>
+<li><h4 id="&#x7EAF;&#x51FD;&#x6570;&#xFF08;pure&#xFF09;">&#x7EAF;&#x51FD;&#x6570;&#xFF08;pure&#xFF09;</h4>
+<blockquote>
+<p>&#x65E2;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x72B6;&#x6001;&#x4E5F;&#x4E0D;&#x4F1A;&#x8BFB;&#x53D6;&#x72B6;&#x6001;&#x53D8;&#x91CF;</p>
+</blockquote>
+</li>
+<li><h4 id="&#x56DE;&#x9000;&#x51FD;&#x6570;">&#x56DE;&#x9000;&#x51FD;&#x6570;</h4>
+<blockquote>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x4E00;&#x4E2A;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x9700;&#x8981;&#x63A5;&#x53D7;&#x4EE5;&#x592A;&#x5E01;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x56DE;&#x9000;&#x51FD;&#x6570;&#xFF0C;&#x4ED6;&#x4F1A;&#x88AB;&#x88AB;&#x52A8;&#x8C03;&#x7528;;
+&#x5F53;&#x6211;&#x4EEC;&#x8C03;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x5408;&#x7EA6;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x5339;&#x914D;&#x5230;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x8C03;&#x7528;&#x56DE;&#x9000;&#x51FD;&#x6570;&#x3002;
+&#x8FD9;&#x4E2A;&#x56DE;&#x9000;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5199;&#x4E00;&#x4E9B;&#x903B;&#x8F91;&#xFF0C;&#x4F46;&#x662F;&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x4E0D;&#x8981;&#x5199;&#x590D;&#x6742;&#x7684;&#x903B;&#x8F91;&#x3002;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x5B9E;&#x73B0;&#x590D;&#x6742;&#x7684;&#x8BDD;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x5F15;&#x8D77;&#x53D1;&#x8D77;&#x4EA4;&#x6613;&#x7684;&#x4EBA;&#x7531;&#x4E8E;&#x53D1;&#x9001;&#x7684;gas&#x4E0D;&#x591F;&#xFF0C;&#x800C;&#x5BFC;&#x81F4;&#x4EA4;&#x6613;&#x5931;&#x8D25;&#x3002;
+&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x56DE;&#x9000;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;
+&#x5E76;&#x4E14;&#x56DE;&#x9000;&#x51FD;&#x6570; &#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x3002;</p>
+</blockquote>
+<p><img src="https://upload-images.jianshu.io/upload_images/7220971-854f1a9fa1e66255.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="34-can-shu.html" class="navigation navigation-prev " aria-label="Previous page: 3.4 solidity 参数和控制结构">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="56db-qu-kuai-lian-qu-zhong-xin-hua-ying-yong-dapp-kai-fa.html" class="navigation navigation-next " aria-label="Next page: 四. 区块链去中心化应用DAPP开发">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.5 solidity 可见性和函数","level":"1.2.3.5","depth":3,"next":{"title":"四. 区块链去中心化应用DAPP开发","level":"1.2.4","depth":2,"path":"56db-qu-kuai-lian-qu-zhong-xin-hua-ying-yong-dapp-kai-fa.md","ref":"56db-qu-kuai-lian-qu-zhong-xin-hua-ying-yong-dapp-kai-fa.md","articles":[{"title":"4.1 合约实战-简单代币开发","level":"1.2.4.1","depth":3,"path":"41-he-yue-shi-6218-jian-dan-dai-bi-kai-fa.md","ref":"41-he-yue-shi-6218-jian-dan-dai-bi-kai-fa.md","articles":[]},{"title":"4.2 合约实战-实现标准代币接口","level":"1.2.4.2","depth":3,"path":"42-he-yue-shi-6218-shi-xian-biao-zhun-dai-bi-jie-kou.md","ref":"42-he-yue-shi-6218-shi-xian-biao-zhun-dai-bi-jie-kou.md","articles":[]},{"title":"4.3 DAPP实战- 应用介绍及前置知识","level":"1.2.4.3","depth":3,"path":"43-dappshi-6218-ying-yong-jie-shao-ji-qian-zhi-zhi-shi.md","ref":"43-dappshi-6218-ying-yong-jie-shao-ji-qian-zhi-zhi-shi.md","articles":[]},{"title":"4.4 DAPP实战- 使用truffle创建项目","level":"1.2.4.4","depth":3,"path":"44-dappshi-6218-shi-yong-truffle-chuang-jian-xiang-mu.md","ref":"44-dappshi-6218-shi-yong-truffle-chuang-jian-xiang-mu.md","articles":[]},{"title":"4.5 DAPP实战-  宠物领养合约编写","level":"1.2.4.5","depth":3,"path":"45-dappshi-6218-chong-wu-ling-yang-he-yue-bian-xie.md","ref":"45-dappshi-6218-chong-wu-ling-yang-he-yue-bian-xie.md","articles":[]},{"title":"4.6 DAPP实战 - 合约部署和测试","level":"1.2.4.6","depth":3,"path":"46-dappshi-zhan-he-yue-bu-shu-he-ce-shi.md","ref":"46-dappshi-zhan-he-yue-bu-shu-he-ce-shi.md","articles":[]},{"title":"4.7 DAPP实战，合约与前端交互","level":"1.2.4.7","depth":3,"path":"47-dappshi-zhan-ff0c-he-yue-yu-qian-duan-jiao-hu.md","ref":"47-dappshi-zhan-ff0c-he-yue-yu-qian-duan-jiao-hu.md","articles":[]}]},"previous":{"title":"3.4 solidity 参数和控制结构","level":"1.2.3.4","depth":3,"path":"34-can-shu.md","ref":"34-can-shu.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"35-solidity-ke-jian-xing-he-han-shu.md","mtime":"2018-08-26T11:37:15.049Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-24T09:43:20.613Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
